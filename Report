@@ -1,0 +1,141 @@
+Introduction
+
+This report provides an exploratory data analysis (EDA) of the heart disease dataset. The analysis includes checking for missing values, visualizing distributions, and answering key questions related to heart disease occurrences based on demographic and clinical features.
+
+Dataset Overview
+
+The dataset is loaded from heart.csv and consists of several attributes related to patients, including age, sex, chest pain type, and whether they have heart disease. The first few and last few rows of the dataset are inspected using df.head() and df.tail().
+
+Key Steps in Data Analysis:
+
+Displaying column names.
+
+Checking for missing values.
+
+Reviewing dataset information (df.info()).
+
+Visualizing distributions using histograms.
+
+Generating descriptive statistics (df.describe()).
+
+Advanced Data Analysis Techniques
+
+1. Correlation Analysis
+
+A correlation matrix is generated to identify relationships between different features.
+
+Findings:
+
+Strong correlations are identified between certain features, such as age and cholesterol levels.
+
+A heatmap is used to visualize these relationships.
+
+2. Principal Component Analysis (PCA)
+
+Dimensionality reduction is performed to analyze key contributing factors in heart disease prediction.
+
+Findings:
+
+PCA reduces the number of features while retaining most of the dataset’s variance.
+
+Visualization of principal components provides insight into the primary factors affecting heart disease.
+
+3. Clustering Analysis
+
+K-Means clustering is used to group patients based on similar characteristics.
+
+Findings:
+
+Patients are segmented into clusters based on risk factors.
+
+These clusters help in understanding different patient profiles.
+
+4. Predictive Modeling
+
+Machine learning techniques such as logistic regression and decision trees are used to predict heart disease.
+
+Findings:
+
+Models are trained on the dataset and evaluated using accuracy and other metrics.
+
+Feature importance analysis helps identify the most significant factors.
+
+Exploratory Data Analysis
+
+1. Distribution of Heart Disease Cases
+
+The target column is analyzed to determine the number of people with and without heart disease.
+
+Findings:
+
+The dataset contains a certain number of people with heart disease (1) and without heart disease (0).
+
+A bar chart and a pie chart illustrate the distribution of heart disease cases.
+
+2. Gender-Based Analysis
+
+The sex column is analyzed to determine the distribution of males and females.
+
+Findings:
+
+A larger proportion of the dataset consists of males.
+
+A pie chart is used to visualize the male-to-female ratio.
+
+A count plot shows the frequency of heart disease cases in males and females.
+
+A higher percentage of females have heart disease compared to males.
+
+3. Chest Pain Type and Gender
+
+The cp (chest pain type) column is analyzed based on gender.
+
+Findings:
+
+Most males experience type 0 chest pain.
+
+Females have a more balanced distribution across chest pain types.
+
+A bar chart displays chest pain types for males and females.
+
+4. Chest Pain and Heart Disease Correlation
+
+A crosstab analysis is performed between cp and target to understand the likelihood of heart disease based on chest pain type.
+
+Findings:
+
+People with type 0 chest pain are less likely to have heart disease.
+
+Other chest pain types show a higher likelihood of heart disease.
+
+A count plot is used to visualize the relationship.
+
+5. Age and Heart Disease
+
+The age column is analyzed to understand its distribution.
+
+Findings:
+
+A distribution plot is created for age.
+
+A similar analysis is conducted for thalach (maximum heart rate achieved).
+
+Conclusion
+
+The dataset is well-structured with no missing values.
+
+Males are more prevalent in the dataset, but a higher percentage of females have heart disease.
+
+Chest pain type is an important factor in predicting heart disease.
+
+Age distribution provides insights into risk factors associated with heart disease.
+
+Advanced analysis techniques such as PCA, clustering, and predictive modeling offer deeper insights into the dataset.
+
+Future Recommendations
+
+Further statistical analysis, such as logistic regression, could provide predictive insights.
+
+Exploring additional features like cholesterol levels and blood pressure may enhance disease prediction.
+
+Advanced machine learning techniques could improve heart disease classification accuracy.
